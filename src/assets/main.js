@@ -29,8 +29,7 @@ function guess() {
 
 //implement new functions here
 function setHiddenFields(){
-    let input = Math.floor(Math.random * 10000)
-    answer.value = input.toString();
+    answer.value = Math.floor(Math.random() * 10000).toString();
     while(answer.value.length == 4){
         answer.value = "0" + answer.value;
     }
